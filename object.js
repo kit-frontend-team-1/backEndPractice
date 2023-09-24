@@ -17,6 +17,7 @@ const 메달리스트 = [
 const 메달별점수계산 = (medal) => {
   const ranking = [...medal];
 
+  // 각 메달에 점수를 줘서 계산 후 비교한다
   ranking.sort((a, b) => {
     const totalA = a.금메달 * 3 + a.은메달 * 2 + a.동메달;
     const totalB = b.금메달 * 3 + b.은메달 * 2 + b.동메달;
